@@ -1,0 +1,160 @@
+:root{
+  --gold:#e7b94e;--gold2:#f4cd70;--dark:#070b0e;--dark2:#10161a;
+  --text:#161616;--muted:#666;--white:#fff;--shadow:0 10px 28px rgba(0,0,0,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.5}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.header{position:sticky;top:0;z-index:1000;background:#070b0e;color:#fff;border-bottom:1px solid rgba(231,185,78,.35)}
+.nav{min-height:78px;display:flex;align-items:center;gap:28px}
+.brand{display:flex;flex-direction:column;line-height:1.02;min-width:220px}
+.brand-main{font-size:28px;font-weight:800;letter-spacing:2px;color:var(--gold)}
+.brand span:not(.brand-main){font-size:14px;font-weight:700;letter-spacing:1px}
+.brand small{font-size:8px;color:#c7c7c7;letter-spacing:1.5px;margin-top:5px}
+nav{display:flex;gap:30px;align-items:center;margin-left:auto}
+nav a{font-size:13px;font-weight:600;color:#eee;padding:29px 0;border-bottom:2px solid transparent}
+nav a:hover,nav a.active{color:var(--gold);border-bottom-color:var(--gold)}
+.whatsapp-top{background:var(--gold);color:#111;padding:9px 18px;border-radius:14px;font-size:13px;font-weight:700;text-align:center;line-height:1.1}
+.whatsapp-top small{font-size:9px;font-weight:500}
+.menu-btn{display:none;background:none;color:#fff;border:0;font-size:28px;margin-left:auto}
+
+.hero{position:relative; overflow:hidden;background:#151b1e}
+.hero:before{content:"";position:absolute;inset:0;background:url("background_car.png") center/cover}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(4,7,8,.95) 0%,rgba(4,7,8,.8) 36%,rgba(4,7,8,.15) 72%,rgba(4,7,8,.35))}
+.hero-content{position:relative;min-height:535px;display:flex;align-items:center;color:#fff}
+.hero-copy{z-index:2;padding:50px 0;max-width:590px}
+.pill{border:1px solid #fff;border-radius:20px;padding:4px 13px;font-size:12px}
+.hero h1{font-size:56px;color:var(--gold);letter-spacing:2px;line-height:1;margin-top:16px}
+.hero h2{font-size:34px;line-height:1.1;margin-top:5px}
+.tagline{font-size:17px;font-weight:600;margin:5px 0 23px}
+.features{display:flex;gap:20px;flex-wrap:wrap;font-size:12px;margin-bottom:25px}
+.features span{white-space:nowrap}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:700}
+.primary{background:var(--gold);color:#111;border-radius:12px;padding:14px 25px}
+.primary:hover{background:var(--gold2);transform:translateY(-1px)}
+.contact-line{display:flex;gap:25px;margin-top:18px;font-weight:600;font-size:14px}
+.hero-car{position:absolute;right:-8%;bottom:-12px;width:60%;z-index:1}
+.hero-car img{width:100%;height:360px;object-fit:cover;object-position:center;border-radius:45% 0 0 0;mix-blend-mode:screen;opacity:.92}
+.hero-slogan{position:absolute;right:2%;top:50px;color:var(-gold);font-size:22px;font-weight:700;font-style:italic;transform:rotate(-4deg);z-index:2;text-align:center}
+
+.section{padding:48px 0}
+.section-title{text-align:center;margin-bottom:28px}
+.section-title>span{display:inline-block;width:60px;height:2px;background:var(--gold);vertical-align:middle;margin:0 12px}
+.section-title h2{display:inline;font-size:30px}
+.section-title p{font-size:13px;color:#666;margin-top:5px}
+.service-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.service-card{text-align:center;padding:22px 8px;border-radius:8px;box-shadow:var(--shadow);min-height:145px;background:#fff}
+.service-card .icon{font-size:34px;margin-bottom:10px}
+.service-card h3{font-size:12px;margin-bottom:7px}
+.service-card p{font-size:10px;color:#666}
+
+.vehicle-section{background:#080d10;color:#fff;padding:30px 0}
+.vehicle{display:grid;grid-template-columns:1.35fr 1fr .55fr;gap:35px;align-items:center}
+.vehicle-photo img{width:100%;height:270px;object-fit:cover;border-radius:12px}
+.vehicle-info h2{font-size:32px}.vehicle-info h2 span{color:var(--gold)}
+.vehicle-info h3{color:var(--gold);font-size:19px;margin:4px 0 15px}
+.vehicle-info ul{list-style:none;font-size:13px;line-height:2.2}
+.vehicle-info li::first-letter{color:var(--gold)}
+.vehicle-thumbs{display:grid;gap:10px}
+.vehicle-thumbs div{height:75px;border:1px solid var(--gold);border-radius:8px;display:grid;place-items:center;text-align:center;background:linear-gradient(135deg,#242b2e,#0c1114);font-size:12px;color:#ddd}
+
+
+.tours-section{background:#fff}
+.tour-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.tour-card{box-shadow:0 4px 16px rgba(0,0,0,.12);border-radius:8px;overflow:hidden;background:#fff;text-align:center;padding-bottom:12px}
+.tour-card img{width:100%;height:105px;object-fit:cover}
+.tour-card h3{font-size:11px;margin-top:9px}
+.tour-card p{font-size:10px;color:#666}
+
+.booking-section{background:#080d10;color:#fff;padding:38px 0}
+.booking-wrap{display:grid;grid-template-columns:.9fr 1.4fr;gap:35px;align-items:center}
+.booking-promo p{font-size:13px}.booking-promo h2{font-size:38px;line-height:1.1;color:#fff}.booking-promo em{color:var(--gold);font-style:italic}
+.booking-promo ul{list-style:none;margin-top:25px;display:grid;gap:10px;font-size:12px}
+.booking-form{background:#fff;color:#111;border-radius:10px;padding:22px;box-shadow:var(--shadow)}
+.booking-form h2{font-size:22px}.booking-form>p{font-size:11px;color:#777;margin-bottom:16px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.form-grid label{font-size:10px;font-weight:600;color:#555}
+.form-grid .full{grid-column:1/-1}
+input,select{width:100%;margin-top:5px;border:1px solid #ddd;border-radius:5px;padding:11px;font:inherit;font-size:12px;outline:none}
+input:focus,select:focus{border-color:var(--gold)}
+.submit{width:100%;margin-top:14px;padding:12px}
+.form-message{text-align:center;margin:8px 0 0;font-weight:600}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.gallery img{height:180px;width:100%;object-fit:cover;border-radius:10px}
+
+.footer{background:#070b0e;color:#ddd;padding-top:35px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1.2fr .6fr;gap:35px;padding-bottom:28px}
+.footer h3{color:var(--gold);font-size:14px;margin-bottom:12px}
+.footer p{font-size:11px;margin:7px 0}
+.footer p a:hover{color:var(--gold)}
+.footer-brand{min-width:auto}.footer-slogan{font-size:24px;color:var(--gold);font-style:italic;font-weight:700;text-align:center}
+.copyright{text-align:center;border-top:1px solid #273036;padding:12px;font-size:10px;color:#999}
+.floating-wa{position:fixed;right:20px;bottom:20px;width:52px;height:52px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:24px;box-shadow:0 5px 20px rgba(0,0,0,.25);z-index:999}
+
+@media(max-width:1000px){
+  .nav{gap:15px}.brand{min-width:190px}.brand-main{font-size:23px}
+  nav{gap:17px}.hero-car{right:-15%;width:65%}
+  .service-grid,.tour-grid{grid-template-columns:repeat(3,1fr)}
+  .vehicle{grid-template-columns:1fr 1fr}.vehicle-thumbs{grid-column:1/-1;grid-template-columns:repeat(3,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;top:78px;left:0;right:0;background:#070b0e;flex-direction:column;gap:0;padding:8px 20px}
+  nav.open{display:flex} nav a{width:100%;padding:12px;border:0}
+  .whatsapp-top{display:none}
+  .hero,.hero-content{min-height:400px}.hero-copy{padding-top:35px;align-self:flex-start}
+  .hero h1{font-size:44px}.hero h2{font-size:27px}
+  .hero-car{right:-45%;width:105%;bottom:15px;opacity:.65}.hero-slogan{right:8px;top:40px;font-size:17px}
+  .service-grid,.tour-grid{grid-template-columns:repeat(2,1fr)}
+  .vehicle,.booking-wrap{grid-template-columns:1fr}.vehicle-thumbs{grid-template-columns:repeat(3,1fr)}
+  .vehicle-photo img{height:220px}.gallery{grid-template-columns:1fr 1fr}
+}
+@media(max-width:480px){
+  .container{width:94% }.brand{min-width:0}.brand-main{font-size:21px}.brand span:not(.brand-main){font-size:11px}
+  .hero h1{font-size:39px}.hero h2{font-size:23px}.tagline{font-size:14px}
+  .features{gap:9px;font-size:10px}.contact-line{font-size:12px;gap:12px}
+  .section{padding:35px 0}.section-title h2{font-size:24px}.section-title>span{width:30px}
+  .service-grid,.tour-grid{grid-template-columns:1fr 1fr;gap:9px}.service-card{min-height:130px}
+  .tour-card img{height:95px}
+  .form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}
+  .vehicle-thumbs{grid-template-columns:1fr}.vehicle-thumbs div{height:55px}
+  .gallery{grid-template-columns:1fr}.gallery img{height:200px}
+  .footer-grid{grid-template-columns:1fr}.footer-slogan{text-align:left}
+  
+  
+}
+
+.slider {
+            width: 100%;
+            max-width: 1200px;
+            height: 300px;
+            margin: 40px auto;
+            overflow: hidden;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .slides {
+            display: flex;
+            width: 600%;
+            height: 100%;
+            transition: transform 0.7s ease-in-out;
+        }
+
+        .slide {
+            width: 16.6667%;
+            height: 100%;
+            flex-shrink: 0;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
